@@ -11,8 +11,7 @@ const homeController = require('./controllers/home.js');
 
 /// Configuration ///
 const PORT = process.env.PORT || 8888;
-const mongoURI =
-  process.env.MONGODB_URI || 'mongodb://localhost:27017/smart_home';
+const mongoURI = process.env.DB_URI || 'mongodb://localhost:27017/smart_home';
 
 /// Middleware ///
 app.use(express.static('public'));
