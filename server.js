@@ -49,7 +49,7 @@ app.use('/home', homeController);
 app.listen(PORT, () => console.log('smart home happening on port', PORT));
 
 /// Routes ///
-app.get('/', (req, res) => {
+app.get('/smart_home', (req, res) => {
   res.render('index.ejs', {
     currentUser: req.session.currentUser,
   });
