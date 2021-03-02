@@ -9,17 +9,17 @@ const userController = require('./controllers/users.js');
 const sessionsController = require('./controllers/sessions.js');
 const homeController = require('./controllers/home.js');
 
-
 /// Configuration ///
-const PORT = process.env.PORT;
-const mongoURI = process.env.MONGODB_URI;
+const PORT = process.env.PORT || 8888;
+const mongoURI =
+  process.env.MONGODB_URI || 'mongodb://localhost:27017/smart_home';
 
 /// Middleware ///
 app.use(express.static('public'));
 // allows us to use put and delete methods
 app.use(methodOverride('_method'));
 // parses info from our input fields into an object
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(
   session({
     secret: process.env.SECRET,
@@ -45,7 +45,6 @@ mongoose.connection.once('open', () => {
 app.use('/users', userController);
 app.use('/sessions', sessionsController);
 app.use('/home', homeController);
-// app.use('/comments', commentsController);
 
 /// Listen ///
 app.listen(PORT, () => console.log('smart home happening on port', PORT));
