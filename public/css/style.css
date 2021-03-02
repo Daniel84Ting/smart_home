@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+  margin: 0 auto;
+  background-image: url('/image/3d_background_squares_purple_light_metal.jpg');
+  background-size: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
+/* logo image */
+#store > img {
+  width: 150px;
+  height: 100px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.indexHome {
+  display: flex;
+  margin-left: 85%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  color: aliceblue;
+}
+.products-font {
+  color: black;
+}
+.container {
+  text-align: center;
+}
+.row {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* welcome,session & user page */
+.welcome-page {
+  background-image: url('/image/Smart-Home-Background-2.jpg');
+  background-size: cover;
+  width: 900px;
+  height: 500px;
+  border-radius: 20px;
+  margin-left: 20%;
+  box-shadow: 30px 40px 30px 10px rgba(0, 0, 0, 0.9);
+}
+
+.session-page {
+  background-image: url('/image/Smart-Home-Background-3.jpg');
+  background-size: cover;
+  width: 900px;
+  height: 550px;
+  border-radius: 20px;
+  margin-left: 20%;
+  box-shadow: 30px 40px 30px 10px rgba(0, 0, 0, 0.9);
+}
+.user-page {
+  background-image: url('/image/Smart-Home-Background-4.jpg');
+  background-size: cover;
+  width: 90%;
+  height: 550px;
+  margin-left: 5%;
+  border-radius: 20px;
+  box-shadow: 30px 40px 30px 10px rgba(0, 0, 0, 0.9);
+}
+.new-page {
+  background-image: url('/image/Smart-Home-Background-5.jpg');
+  background-size: cover;
+  width: 90%;
+  height: 550px;
+  margin-left: 5%;
+  border-radius: 20px;
+  box-shadow: 30px 40px 30px 10px rgba(0, 0, 0, 0.9);
+}
+
+.row-nav {
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  height: 30%;
+  background-image: url('https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif');
+  color: aliceblue;
+  margin: 0px auto;
+  padding: 0px auto;
+  box-shadow: 10px 40px 30px 0px black;
+}
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  border-radius: 30px;
+  background-color: aliceblue;
+  margin: auto;
+  box-shadow: 30px 40px 30px 10px rgba(0, 0, 0, 0.9);
+}
+
+a > img {
+  width: 200px;
+  height: 200px;
+}
+
+.main-message {
+  width: 100%;
+  background: aliceblue;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  border: 0px black;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+input[type='submit'] {
+  width: 100%;
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  color: white;
+  transition: 0.3s ease-in;
+  margin: 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+input[type='submit']:hover {
+  cursor: pointer;
+  background: rgba(101, 36, 252, 0.5);
+  transition: 0.3s ease-in;
+}
+button {
+  width: 100%;
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  color: white;
+  transition: 0.3s ease-in;
+  margin: 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgba(101, 36, 252, 0.5);
+  transition: 0.3s ease-in;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease-in;
+  font-size: 0.8em;
+  font-size: x-large;
+  font-family: 'Orbitron', sans-serif;
+}
+a:hover {
+  color: rgb(166, 166, 248);
+  transition: 0.3s ease-in;
+  font-size: xx-large;
+}
+
+.jumbo > img {
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 30px 40px 30px 10px rgba(0, 0, 0, 0.9);
+}
+label {
+  color: aliceblue;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head.ejs') -%>
+    <%- include('../partials/nav.ejs') -%>
+  </head>
+  <body>
+    <nav>
+
+    </nav>
+    <div class="container">
+      <h2> <%= product.name  %> </h2>
+        <div class="jumbo">
+          
+            <img src="<%= product.img %>" alt="An image of <%= product.name %>" class="jumbo-img" />
+            <h3><p><%=product.description %></p></h3>
+            <% if (product.qty <= 0) { %>
+              <h4 class="out-of-stock"> OUT OF STOCK </h4>
+            <% } else   { %>
+            <h5>Stock :  <%= product.qty %> </h>
+            <form action="/home/<%=product.id%>/buy?_method=put" method="POST">
+              <button class="buy-button">Buy</button>
+            </form>
+            <h4>Price: $<%=product.price %></h4>
+            <% } %>
+        </div>
+        <div class="admin-actions">
+          <a href="/home/<%=product.id%>/edit"><button type="button" name="button" class="edit-button">Edit</button></a>
+          <form action="/home/<%=product.id%>?_method=DELETE" method="POST">
+            <button class="delete-button">DELETE</button>
+          </form>
+        </div>
+    </div>
+    <!-- messages -->
+    <div class="main-messages">
+      <!-- post a new message form -->
+      <h1>Post Your Review Of The Product</h1>
+      <form class="new-messages" action="/room/new" method="post">
+        <textarea name="message" placeholder="TYPE YOUR REVIEW HERE..."></textarea>
+        <input type="submit" value="POST">
+      </form>
+      <!-- displays all messages -->
+      <h1>Review board</h1>
+      
+      
+     </div>
+    </div>
+  </body>
+</html>
