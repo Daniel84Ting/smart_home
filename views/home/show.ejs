@@ -9,23 +9,23 @@
 
     </nav>
     <div class="container">
-      <h2> <%= product.name  %> </h2>
+      <h1> <%= product.name  %> </h1>
         <div class="jumbo">
           
             <img src="<%= product.img %>" alt="An image of <%= product.name %>" class="jumbo-img" />
             <h3><p><%=product.description %></p></h3>
             <% if (product.qty <= 0) { %>
-              <h4 class="out-of-stock"> OUT OF STOCK </h4>
+              <h3 class="out-of-stock"> OUT OF STOCK </h3>
             <% } else   { %>
-            <h5>Stock :  <%= product.qty %> </h>
+            <h3>Stock :  <%= product.qty %> </h3>
             <form action="/home/<%=product.id%>/buy?_method=put" method="POST">
-              <button class="buy-button">Buy</button>
+              <button class="buy-button"><h3>Buy</h3></button>
             </form>
-            <h4>Price: $<%=product.price %></h4>
+            <h3>Price: $<%=product.price %></h3>
             <% } %>
         </div>
         <div class="admin-actions">
-          <a href="/home/<%=product.id%>/edit"><button type="button" name="button" class="edit-button">Edit</button></a>
+          <a href="/home/<%=product.id%>/edit"><button type="button" name="button" class="edit-button"><h3>Edit</h3></button></a>
           <form action="/home/<%=product.id%>?_method=DELETE" method="POST">
             <button class="delete-button">DELETE</button>
           </form>
@@ -35,14 +35,15 @@
     <div class="main-messages">
       <!-- post a new message form -->
       <h1>Post Your Review Of The Product</h1>
-      <form class="new-messages" action="/room/new" method="post">
-        <textarea name="message" placeholder="TYPE YOUR REVIEW HERE..."></textarea>
-        <input type="submit" value="POST">
+      <form class="edit" action="/home" method="POST">
+        <textarea type="text" name="comments" placeholder="TYPE YOUR REVIEW HERE..."></textarea>
+        <input type="submit" name="submit" value="POST">
       </form>
       <!-- displays all messages -->
       <h1>Review board</h1>
-      
-      
+      <div class="comments">
+        <h3> <%= product.comments %> </h3>  
+      </div>
      </div>
     </div>
   </body>
