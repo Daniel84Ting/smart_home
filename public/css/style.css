@@ -26,6 +26,13 @@ h5 {
   text-align: center;
   color: aliceblue;
 }
+.index-h1,
+.nav-h1 {
+  font-size: 50px;
+}
+.out-of-stock {
+  color: red;
+}
 .products-font {
   color: black;
 }
@@ -89,7 +96,10 @@ h5 {
 }
 .products {
   display: flex;
+  order: 4;
   justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -105,6 +115,7 @@ h5 {
 a > img {
   width: 200px;
   height: 200px;
+  background-size: auto;
 }
 
 .main-message {
@@ -188,4 +199,14 @@ a:hover {
 }
 label {
   color: aliceblue;
+}
+.comments {
+  min-width: 100%;
+  max-width: 100%;
+  border: 0px black;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+  background-color: aliceblue;
 }
