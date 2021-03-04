@@ -81,19 +81,19 @@ products.delete('/:id', (req, res) => {
 });
 
 // /// post a new message ///
-// products.post('/', (req, res) => {
-// //   // finds user by id (based on current logged in user )
-//   Product.create(
-//     { _id: req.session.currentUser._id },
-//     // uses $push method to push the req.body.message
-//     { $push: { users: req.body.comments } },
-//     // callback
-//     (err, foundUser) => {
-//       // redirects to the room page
-//       res.redirect('back');
-//     },
-//   );
-// });
+products.post('/', (req, res) => {
+  //   // finds user by id (based on current logged in user )
+  Product.create(
+    { _id: req.sessions.currentUser._id },
+    // uses $push method to push the req.body.message
+    { $push: { comments: req.body.comments } },
+    // callback
+    (err, foundUser) => {
+      // redirects to the room page
+      res.redirect('back');
+    },
+  );
+});
 
 /// Buy route ///
 products.put('/:id/buy', (req, res) => {

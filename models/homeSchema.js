@@ -15,12 +15,12 @@ const productSchema = new Schema(
       type: Number,
       min: [0],
     },
-    createdBy: { type: Schema.Types.ObjectId, ref: 'users' },
+    createdBy: { type: Schema.Types.ObjectId, ref: 'User' },
     comments: [
       {
         type: new mongoose.Schema({
           comment: { type: String },
-          enteredBy: { type: Schema.Types.ObjectId, ref: 'users' },
+          enteredBy: { type: Schema.Types.ObjectId, ref: 'User' },
         }),
       },
       { timestamps: true },

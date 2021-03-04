@@ -8,6 +8,7 @@ const app = express();
 const userController = require('./controllers/users.js');
 const sessionsController = require('./controllers/sessions.js');
 const homeController = require('./controllers/home.js');
+// const commentController = require('./controllers/comments.js');
 
 /// Configuration ///
 const PORT = process.env.PORT || 8888;
@@ -44,6 +45,7 @@ mongoose.connection.once('open', () => {
 app.use('/users', userController);
 app.use('/sessions', sessionsController);
 app.use('/home', homeController);
+// app.use('/comments', commentController);
 
 /// Listen ///
 app.listen(PORT, () => console.log('smart home happening on port', PORT));
