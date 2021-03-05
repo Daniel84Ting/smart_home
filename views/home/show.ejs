@@ -32,17 +32,17 @@
         </div>
     </div>
     <!-- messages -->
-    <div class="main-messages">
+    <div class="main-comments">
       <!-- post a new message form -->
       <h1>Post Your Review Of The Product</h1>
-      <form class="edit" action="/home" method="POST">
-        <textarea type="text" name="comments" placeholder="TYPE YOUR REVIEW HERE..."></textarea>
+      <form class="edit" action="/home/" method="POST">
+        <textarea type="text" name="comments" placeholder="TYPE YOUR REVIEW HERE..." required></textarea>
         <input type="submit" name="submit" value="POST">
       </form>
       <!-- displays all messages -->
       <h1>Review board</h1> 
       <div class="comments">
-        <h3> 
+        <h3> <%= product.comments %> 
         </h3>
                 
       </div>

@@ -80,9 +80,9 @@ products.delete('/:id', (req, res) => {
   });
 });
 
-// /// post a new message ///
+/// post a new Comments ///
 products.post('/', (req, res) => {
-  //   // finds user by id (based on current logged in user )
+  // finds user by id (based on current logged in user )
   Product.create(
     { _id: req.sessions.currentUser._id },
     // uses $push method to push the req.body.message
