@@ -31,28 +31,47 @@ https://smart-home-app.herokuapp.com/smart_home
 |         |           | /sessions/new | POST        | Authenticates user from Database                      |
 |         |           | /home/new     | POST        | Add new products into Database                        |
 | 4.      | Show      | /home/_id     | GET         | show base on product id of information                |
-|         |           |               |             |                                                       |
 | 5.      | Edit      | /home/_id     | GET         | To edit existing products list                        |
-|         |           |               |             |                                                       |
 | 6.      | Update    | /home/_id     | PUT         | Update requested products details                     |
 |         |           | /home/buy     | PUT         | To buy the product and deducted from the stock        |
 | 7.      | Destroy   | /logout       | DELETE      | Destroys sessions and redirect to starter page        |
 |         |           | /home/_id     | DELETE      | Destroy requested product and redirected to home page |
-|---------|-----------|---------------|-------------|-------------------------------------------------------|
 
 ## Accomplishments
 - new user have to signup for new user name and password, after signup the user able login to the home page. the home page user able to create new product such as products name, image, description, price, quantity. user also can buy the products until the product quantity show "out of stock". user able to edit the product name, image, description, price or quantity. if the product is no longer in stock user can delete the product from the database list.
 
 ## Wireframe Design
-
+- #### Main Page
 ![](Image/signup_or_login.png)
-1. Signup or Login Page
+- Signup or Login Page
 
 ![](Image/signup.png)
-1. New User Signup Page
+- New User Signup Page
 
 ![](Image/login.png)
-1. User Login Page
+- User Login Page
+
+![](Image/welcome_page.png)
+- User Welcome Page
+
+- #### Home Page
+![](Image/home_page.png)
+- Home page for the smart home products page
+
+![](Image/create_new.png)
+- Create new product Page
+
+![](Image/show_product_page.png)
+- Show the product information page
+
+![](Image/show_out_of_stock.png)
+- Show Out Of Stock in quantity
+
+![](Image/edit_page.png)
+- Edit product Page
+
+![](Image/show_delete_button.png)
+- Delete button 
 
 ## Additional Features were under Considerations
 
