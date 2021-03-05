@@ -38,10 +38,10 @@ https://smart-home-app.herokuapp.com/smart_home
 |         |           | /home/_id     | DELETE      | Destroy requested product and redirected to home page |
 
 ## Accomplishments
-- new user have to signup for new user name and password, after signup the user able login to the home page. the home page user able to create new product such as products name, image, description, price, quantity. user also can buy the products until the product quantity show "out of stock". user able to edit the product name, image, description, price or quantity. if the product is no longer in stock user can delete the product from the database list.
+- new user have to signup for new user name and password, after signup the user able login to the home page. the home page user able to create new product such as products name, image, description, price, quantity. user also can buy the products until the product quantity show "out of stock". user able to edit the product name, image, description, price or quantity. if the product is no longer in stock user can delete the product from the database list. user can click on the home icon to back to the home page.
 
 ## Wireframe Design
-- #### Main Page
+#### Main Page
 ![](Image/signup_or_login.png)
 - Signup or Login Page
 
@@ -54,7 +54,7 @@ https://smart-home-app.herokuapp.com/smart_home
 ![](Image/welcome_page.png)
 - User Welcome Page
 
-- #### Home Page
+#### Home Page
 ![](Image/home_page.png)
 - Home page for the smart home products page
 
